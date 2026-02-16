@@ -8,6 +8,7 @@
 >
 > **设计日期**：2026年2月
 > **基于**：4个并行研究代理的深度调研 + 40+ 篇文献综合分析
+> **注意**：文中涉及的服务定价截止于2026年初，请以各平台官网为准
 
 ---
 
@@ -129,7 +130,7 @@ Next.js + 微服务架构
 |---|------|---------|
 | 1 | [Amazon S3 宕机 (2017)](https://aws.amazon.com/message/41926/) | 一个拼写错误导致大半个互联网瘫痪 |
 | 2 | [Replit AI 删库 (2025)](https://fortune.com/2025/07/23/ai-coding-tool-replit-wiped-database-called-it-a-catastrophic-failure/) | AI 代理删除生产数据库并试图隐瞒 |
-| 3 | [Tea 应用数据泄露 (2025)](https://securityboulevard.com/2025/08/the-tea-app-hack-how-a-safe-space-leaked-13000-id-photos-1-1m-messages/) | vibe coding 导致零认证——7万张照片泄露 |
+| 3 | [Tea 应用数据泄露 (2025)](https://securityboulevard.com/2025/08/the-tea-app-hack-how-a-safe-space-leaked-13000-id-photos-1-1m-messages/) | AI 默认生成无认证代码——约72,000张图片（含13,000张身份证件）泄露 |
 | 4 | [Knight Capital 交易灾难 (2012)](https://en.wikipedia.org/wiki/Knight_Capital_Group) | 代码部署错误导致45分钟亏损4.4亿美元 |
 | 5 | [Cloudflare 宕机 (2019)](https://blog.cloudflare.com/cloudflare-outage/) | 一条正则表达式让全球 CDN 崩溃 |
 | 6 | [GitHub 数据库故障 (2018)](https://github.blog/2018-10-30-oct21-post-incident-analysis/) | 数据库主从切换导致24小时服务降级 |
@@ -548,7 +549,7 @@ HTTP 429 Too Many Requests
 **练习**：你要构建一个"宠物领养平台"。选择：
 
 1. 前端框架：Next.js vs Remix vs Astro
-2. 数据库：Supabase vs Firebase vs PlanetScale
+2. 数据库：Supabase vs Firebase vs Neon
 3. 认证：Clerk vs Supabase Auth vs Auth.js
 4. 部署：Vercel vs Railway vs Render
 5. 样式：Tailwind vs CSS Modules vs styled-components
@@ -748,7 +749,7 @@ HTTP 429 Too Many Requests
 - [ ] 有没有"焦点陷阱"（进去出不来的区域）？
 - [ ] 模态框打开时，焦点转移了吗？
 
-**为什么重要**：全球约15%的人有某种形式的残障。键盘可访问性是最基本的无障碍要求。
+**为什么重要**：全球约16%的人有某种形式的残障（WHO 数据）。键盘可访问性是最基本的无障碍要求。
 
 ---
 
@@ -1041,7 +1042,7 @@ docker run -d -p 3000:3000 bkimminich/juice-shop
 1. 明文存储（password = "abc123"）
 2. MD5 哈希（已被破解，不安全）
 3. SHA-256 哈希（比MD5好，但仍有彩虹表攻击风险）
-4. bcrypt 加盐哈希（当前最佳实践）
+4. bcrypt/Argon2 加盐哈希（推荐方案，Argon2 为最新标准）
 5. 不存储密码——使用 OAuth（"用 Google 登录"）
 
 **思考题**：
@@ -1708,7 +1709,7 @@ AI 客服机器人：
 **格式**：对同一问题的两个方案，论证优缺点并选择。
 
 **辩题 1：自建 vs 购买**
-> 搜索功能：Algolia（$29/月） vs PostgreSQL 全文检索（免费但需开发）
+> 搜索功能：Algolia（按用量计费，免费层 10,000 请求/月） vs PostgreSQL 全文检索（免费但需开发）
 
 **辩题 2：单体 vs 微服务**
 > 电商平台：一个大应用 vs 拆分为商品/订单/支付/用户服务
@@ -1966,8 +1967,8 @@ SOM：第一年目标：1000 个付费用户
 
 | 服务 | 免费额度 | 起步价 | 数据库类型 |
 |------|---------|--------|-----------|
-| Supabase | 500MB, 5万行 | $25/月 | PostgreSQL |
-| PlanetScale | 5GB, 10亿读 | $39/月 | MySQL |
+| Supabase | 500MB, 50,000 MAU | $25/月 | PostgreSQL |
+| PlanetScale | 无免费层（2024年3月取消） | $39/月起 | MySQL |
 | Firebase | 1GB, 5万读/天 | 按用量 | NoSQL |
 | Railway | $5免费额度 | 按用量 | PostgreSQL |
 | Neon | 512MB | 免费 | PostgreSQL |
@@ -3946,7 +3947,7 @@ API 响应时间：< ___ms
 |------|------|---------|
 | Don't Make Me Think | Steve Krug | 可用性设计 |
 | The Design of Everyday Things | Don Norman | 设计思维 |
-| Refactoring UI | Adam Wathan | 视觉设计（最实用） |
+| Refactoring UI | Adam Wathan & Steve Schoger | 视觉设计（最实用） |
 | Hooked | Nir Eyal | 产品心理学 |
 | Beyond Vibe Coding | Addy Osmani | AI 时代开发 |
 

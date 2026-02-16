@@ -32,7 +32,7 @@ The term was coined by **Andrej Karpathy** (co-founder of OpenAI, former AI lead
 
 | Tool | Key Strengths | Pricing | Best For |
 |------|--------------|---------|----------|
-| **Cursor** | Composer workflow for structured multi-file changes; dominant market position | $20/mo (Pro), $200/mo (Ultra) | 90% of developers; rapid iteration on codebases |
+| **Cursor** | Composer workflow for structured multi-file changes; dominant market position | Credit-based pricing (formerly $20/mo Pro); check cursor.com for current plans | 90% of developers; rapid iteration on codebases |
 | **Claude Code** | Terminal-only focus; 93% benchmark success rate (highest); deep reasoning | Usage-based via Anthropic API | Command-line power users; complex code tasks |
 | **Windsurf** (formerly Codeium) | Cascade agent handles context best for large codebases | $15/mo for 500 credits | Large, complex codebases |
 | **GitHub Copilot** | Agent Mode; 15M+ users; deep VS Code integration; Project Padawan autonomous agent | $10/mo (Individual), $19/mo (Business) | Developers already in the GitHub ecosystem |
@@ -55,7 +55,7 @@ The term was coined by **Andrej Karpathy** (co-founder of OpenAI, former AI lead
 
 ### Market Valuations
 
-- **Anysphere** (Cursor's parent): Valuation skyrocketed from **$2.6B** (late 2024) to **$29.3B** (December 2025)
+- **Anysphere** (Cursor's parent): Valuation skyrocketed from **$2.6B** (late 2024) to **$29.3B** (November 2025)
 - The vibe coding market is projected to grow from **$2.96B** (2025) to **$325B** by 2040 (CAGR of 36.79%)
 
 ---
@@ -73,7 +73,7 @@ The term was coined by **Andrej Karpathy** (co-founder of OpenAI, former AI lead
 ### Startups and Business
 
 - **25% of Y Combinator's Winter 2025 startups** reported codebases that were 95% AI-generated
-- **87% of Fortune 500 companies** adopted at least one vibe coding platform
+- **A large share of Fortune 500 companies** reportedly adopted at least one vibe coding platform (exact figures vary by source)
 - The Wall Street Journal reported professional engineers adopting vibe coding for commercial use cases (July 2025)
 
 ### Democratization Impact
@@ -173,7 +173,7 @@ David Mytton (CEO, Arcjet): expects more vibe-coded apps hitting production in a
 
 | Metric | Value |
 |--------|-------|
-| Fortune 500 companies with vibe coding platform | 87% |
+| Fortune 500 companies with vibe coding platform | Widely adopted (exact % varies by source) |
 | YC W25 startups with 95%+ AI-generated code | 25% |
 | Lines of AI-generated code (2024) | 256 billion |
 
@@ -221,7 +221,7 @@ David Mytton (CEO, Arcjet): expects more vibe-coded apps hitting production in a
 - Karpathy declares vibe coding "passe," introduces "agentic engineering"
 - Tools evolve from chatbot-style to agentic: AI agents have terminals, browsers, deployment keys
 - Focus shifts from "generate code" to "orchestrate agents with oversight"
-- Enterprise adoption becomes mainstream (87% Fortune 500)
+- Enterprise adoption becomes mainstream
 - First academic workshop on vibe coding announced (VibeX 2026 at EASE conference)
 - GitHub Copilot transforms VS Code into "multi-agent orchestration hub"
 - Replit Agent 3 adds comprehensive safeguards post-disaster

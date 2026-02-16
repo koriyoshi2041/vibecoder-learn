@@ -12,7 +12,7 @@ This report covers the full landscape of how vibe coders can effectively orchest
 
 The core skill for vibe coders is no longer syntax but *communication*. Effective prompting for code generation follows a hierarchy:
 
-**Specificity beats vagueness.** Research shows that prompts with explicit specifications reduce back-and-forth refinement by 68%. Instead of "build a login page," say "Build a login page using React 18 with TypeScript, email/password fields, Zod validation, and error states for invalid credentials and network failures."
+**Specificity beats vagueness.** Research shows that prompts with explicit specifications significantly reduce back-and-forth refinement. Instead of "build a login page," say "Build a login page using React 18 with TypeScript, email/password fields, Zod validation, and error states for invalid credentials and network failures."
 
 **Role-based prompting sets expectations.** Asking the AI to "act as a senior backend engineer reviewing for security vulnerabilities" produces fundamentally different output than a generic request. The AI adjusts tone, depth, and focus based on the persona.
 
@@ -52,7 +52,7 @@ Each step builds on the previous output, keeping the AI focused and producing hi
 
 CLAUDE.md is a markdown file that Claude reads at the start of every conversation. It serves as Claude's persistent memory for your project. A well-crafted CLAUDE.md includes:
 
-- **Tech stack and project purpose**: "This is a Next.js 14 app using TypeScript, Prisma ORM, and PostgreSQL"
+- **Tech stack and project purpose**: "This is a Next.js app using TypeScript, Prisma ORM, and PostgreSQL"
 - **Project structure**: "API routes are in src/app/api/, components in src/components/, database models in prisma/schema.prisma"
 - **Common commands**: `npm run dev`, `npm run test`, `npx prisma migrate dev`
 - **Code style rules**: "Use ES modules, functional components with hooks, Zod for validation"
@@ -593,9 +593,9 @@ Practical techniques for managing context within and across sessions:
 - At Anthropic, ~90% of the code for Claude Code is written by Claude Code itself
 - MCP servers grew from ~100,000 downloads to over 8 million in 6 months
 - 67% of teams experience a learning curve when adopting spec-driven development
-- Prompts with explicit specifications reduce back-and-forth refinement by 68%
-- AI-generated code has security flaws in nearly 50% of samples
-- AI makes logic errors 75% more commonly than other types of errors
+- Prompts with explicit specifications significantly reduce back-and-forth refinement
+- AI-generated code has security flaws in approximately 45% of samples (Veracode 2025)
+- Compared to human code, AI-generated code has 75% more logic and correctness issues (CodeRabbit)
 - The MCP ecosystem has grown to over 10,000 active servers
 
 ---

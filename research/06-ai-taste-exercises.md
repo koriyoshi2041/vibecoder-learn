@@ -1899,7 +1899,7 @@ AI 是否安全可靠？
 # CLAUDE.md — AI 学习助手项目
 
 ## 技术栈
-- 前端：Next.js 14 + TypeScript + Tailwind CSS
+- 前端：Next.js + TypeScript + Tailwind CSS
 - 后端：Next.js API Routes
 - 数据库：Supabase (PostgreSQL)
 - AI：Claude API (Sonnet 4)
@@ -2019,7 +2019,7 @@ feat: / fix: / refactor: / docs: / test: / chore:
 |------|-------------|------|
 | 使用不可变数据操作模式 | 全局 | 对所有项目都适用 |
 | 不允许硬编码 API 密钥 | 全局 | 安全基线 |
-| 使用 Next.js 14 + TypeScript | 项目 | 特定于此项目 |
+| 使用 Next.js + TypeScript | 项目 | 特定于此项目 |
 | React 组件使用函数式组件 | | |
 | 数据库查询使用参数化查询防止注入 | | |
 | 商品价格显示统一使用 ¥ 符号 | | |
@@ -2136,7 +2136,7 @@ my-ecommerce-project/
 ```
 
 需要分类的 15 类信息：
-1. 项目使用 Next.js 14 + TypeScript
+1. 项目使用 Next.js + TypeScript
 2. 上周的 Bug 修复讨论记录
 3. 数据库的表结构
 4. 用户刚才说"请用函数式组件"
